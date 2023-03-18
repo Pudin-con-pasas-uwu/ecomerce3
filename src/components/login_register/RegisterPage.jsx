@@ -2,7 +2,6 @@ const LoginPage = () => {
     return (
             <main >
             <div className="RegisterPage_h1">
-              <h1><a href="/">Store</a></h1>
             </div>
               <div className="form-register">
               <form className="RegisterPageForm">
