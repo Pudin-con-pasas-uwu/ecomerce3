@@ -1,5 +1,3 @@
-import SearchBar from "../SearchBar";
-
 import React from "react";
 
 const Inicio = () => {
@@ -12,7 +10,7 @@ const Inicio = () => {
         </p>
 
         <div className="mid">
-          <SearchBar/>
+
         </div>
       </div>
     </div>
