@@ -1,0 +1,91 @@
+
+  h2.monthly{
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: 400;
+  }
+  .suscribe{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    align-content: center ;
+   }
+  
+  .phrase_news{
+     line-height: 26px;
+    letter-spacing: 0;
+    font-size: 14px;
+    margin: auto;
+    flex-direction: column;
+    width: 30%;
+    min-width:389px;
+    color: #1a1b1f;
+    opacity: 0.6;
+  }
+  
+  .p.news{
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-left: 15%;
+  }
+  
+  .news{
+    margin-top: 3%;
+    margin-bottom: 2px;
+  }
+  
+  .enteremail{
+    width: 330px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    padding: 9px 8px;
+    border: 1px solid #eeeded;
+    background-color: #fff;
+    border-radius: 0px;
+    font-size: 14px;
+    line-height: 26px;
+    opacity: 0.6;
+    align-items: center;
+    color: #1a1b1f;
+  }
+
+  @media (max-width:472px){
+   .submit{
+    margin-top: 15px;
+    width: auto;
+   }
+  }
+  
+  .submit{
+    --font-mono: 'Montserrat';
+    background-color: #1a1b1f;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    padding: 12px 24px;
+    text-align: center;
+    letter-spacing: 2px;
+    border: 0;
+  }
+  
+  .submit:hover{
+    background-color: #B02222;
+    color: #fff;
+  }
+  
+
+  @media screen and (max-width: 700px) {
+    .ui.mobile.ad {
+       display: block;
+     }
+      container-fluid.row {
+      display: block;
+      height: 50vh;
+    }
+    .enteremail-container{
+      display: block;
+      height: 50vh;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+  }
+}
