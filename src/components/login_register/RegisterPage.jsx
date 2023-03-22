@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { Link } from "next/Link";
+import { Link } from "next/link";
 import { useState } from "react";
 
 var today = new Date();
