@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import { Link } from "next/Link";
 import { useState } from "react";
 
 const LoginPage = () => {
@@ -41,7 +42,7 @@ const LoginPage = () => {
   return (
           <main >
             <div className="LoginPage_h1">
-              <h1><a href="/">Store</a></h1>
+              <h1><Link href="/">Store</Link></h1>
             </div>
             <div className="form-signin">
             <form className="LoginPageForm" onSubmit={handleSubmit}>
@@ -55,7 +56,7 @@ const LoginPage = () => {
                 <label htmlFor="floatingPassword">Contraseña</label>
               </div>
               <button className="w-100 btn btn-lg btn-dark" id="LoginPage_ButtonLogin" type="submit">Acceder</button>
-              <a href="LoginPage">¿Olvidaste tu contraseña?</a>
+              <Link href="LoginPage">¿Olvidaste tu contraseña?</Link>
             </form>
             </div>
             <div className="RegisterButton">

@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import { Link } from "next/Link";
 import { useState } from "react";
 
 var today = new Date();
@@ -56,7 +57,7 @@ const RegisterPage = () => {
     return (
             <main >
             <div className="RegisterPage_h1">
-              <h1><a href="/">Store</a></h1>
+              <h1><Link href="/">Store</Link></h1>
             </div>
               <div className="form-register">
               <form className="RegisterPageForm" onSubmit={handleSubmit}>
