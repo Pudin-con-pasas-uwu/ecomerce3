@@ -62,6 +62,10 @@
     color: black;
     text-align: center;
     margin-top: 80px;
+    margin-bottom: 70px;
+  }
+  .RegisterButton h6{
+    margin-bottom: 25px;
   }
   #LoginPage_ButtonLogin{
     background: black;
@@ -69,10 +73,16 @@
   #LoginPage_ButtonLogin:hover{
     background: #b02222;
   }
+  #LoginPage_ButtonLogin:focus{
+  box-shadow: none;
+  }
   #LoginPage_ButtonRegister{
-    background: none;
     border: 2px solid #b02222;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
     color: #b02222;
+    padding: 15px 100px;
+    margin-top: 10px;
   }
   #LoginPage_ButtonRegister:hover{
     background: #b02222;
@@ -129,6 +139,9 @@
 
   #RegisterPage_ButtonRegister:hover{
     background-color: #b02222;
+  }
+  #RegisterPage_ButtonRegister:focus{
+    box-shadow: none;
   }
   @media (max-width: 500px){
     #floatingInput_Apellidos{
