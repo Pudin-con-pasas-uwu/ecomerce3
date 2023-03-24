@@ -57,7 +57,7 @@ const RegisterPage = () => {
     return (
             <main >
             <div className="RegisterPage_h1">
-              <h1><Link href="/">Store</Link></h1>
+              <h1><Link href="/">Regresar</Link></h1>
             </div>
               <div className="form-register">
               <form className="RegisterPageForm" onSubmit={handleSubmit}>

@@ -42,26 +42,26 @@ const LoginPage = () => {
   return (
           <main >
             <div className="LoginPage_h1">
-              <h1><Link href="/">Store</Link></h1>
+              <h1><Link href="/">Regresar</Link></h1>
             </div>
             <div className="form-signin">
             <form className="LoginPageForm" onSubmit={handleSubmit}>
               <h1 className="h3 mb-3 fw-normal">Por favor, inicia sesión</h1>
               <div className="form-floating">
-                <input type="email" className="form-control" name="email" id="floatingInput" value={form.email} onChange={handleChange} placeholder="name@example.com" />
+                <input type="email" className="form-control" name="email" id="floatingInput" value={form.email} onChange={handleChange} placeholder="name@example.com" required/>
                 <label htmlFor="floatingInput">Correo electrónico</label>
               </div>
               <div className="form-floating">
-                <input type="password" className="form-control" name="password" id="floatingPassword" value={form.password} onChange={handleChange}  placeholder="Password" />
+                <input type="password" className="form-control" name="password" id="floatingPassword" value={form.password} onChange={handleChange}  placeholder="Password" required/>
                 <label htmlFor="floatingPassword">Contraseña</label>
               </div>
               <button className="w-100 btn btn-lg btn-dark" id="LoginPage_ButtonLogin" type="submit">Acceder</button>
-              <Link href="LoginPage">¿Olvidaste tu contraseña?</Link>
+              {/*<Link href="LoginPage">¿Olvidaste tu contraseña?</Link>*/}
             </form>
             </div>
             <div className="RegisterButton">
             <h6>¿Eres nuevo?</h6>
-            <button className="btn btn-lg btn-dark" id="LoginPage_ButtonRegister"> <a href="RegisterPage">Crear cuenta</a></button>
+            <Link id="LoginPage_ButtonRegister" href="RegisterPage">Crear cuenta</Link>
             </div>
           </main>
         );

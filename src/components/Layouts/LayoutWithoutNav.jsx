@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 
-const Layout = (props) => {
+const LayoutWithoutNav = (props) => {
 return (
     <div>
     <Head>
@@ -18,4 +18,4 @@ return (
     </div>
 );
 };
-export default Layout;
+export default LayoutWithoutNav;
