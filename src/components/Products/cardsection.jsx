@@ -7,7 +7,7 @@ const Cardsection = (props) => {
     <div className="cards-container">
       {Array.isArray(props.users.rows) && props.users.rows.length > 0 ?
         props.users.rows.map(user => (
-          <Link href={`/DetaillProducts/${user.id}`} className="card" key={user.id} >
+          <Link href={`/DetailProducts/${user.id}`} className="card" key={user.id} >
           {/* Usamos el componente Link de Next.js y definimos el href con la ruta dinámica "/user/[id]" y el as con la ruta completa a la que se debe redirigir. Agregamos también el className y el key de cada elemento*/}
             <div className="">
               <h2 className="claro">{user.product_name}</h2>

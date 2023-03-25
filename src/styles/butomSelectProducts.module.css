@@ -17,7 +17,6 @@
 }
 #SelectQuantity{
     width: inherit;
-    /* width: 80px; */
     border-radius: 0%;
     border-color: #cccccc;
     margin-bottom: 10px;
@@ -49,4 +48,11 @@
     line-height: 26px;
     font-weight: 400;
     margin-bottom: 10px;
+}
+#bottomSpace{
+    text-align: center;
+    font-size: 1.25rem;
+    height: 50px;
+    width: 100%;
+    border-radius: 0%;
 }
