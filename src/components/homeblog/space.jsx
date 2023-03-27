@@ -18,9 +18,9 @@ const Space = () => {
               <br />
             </div>
             <div className="col-lg-6">
-              <p>Me podría matar poniendo texto default en esta parte, pero honestamente ocupo rellenar este espacio, 
-                por favor compra en nuestra tienda, pronto Amazon o mercado libre se quedarán detrás de nosotros,
-                nuestro equipo de desarrollo, programadores y vendedores te lo agradecerían mucho.
+              <p>Además, con nuestro servicio de soporte y apartados no tendrás que preocuparte porque tus mangas, figuras o pines se agoten,
+                ya que nosotros desde el momento de que nos llegue la confirmación de tu compra, lo empaquetamos y encargamos de que llegue rápido y
+                seguro a la puerta de tu casa.
               </p>
             </div>
           </div>
