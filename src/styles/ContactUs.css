@@ -41,10 +41,15 @@
     height: 200px;
     width: 650px;
 }
+.col-sm-3{
+    padding: 5px;
+    margin: 5px;
+}
+
 @media screen and (max-width: 768px) {
     .altura{
-        height: auto;
-        width: auto;
+        height: 200px;
+        width: 473px;
     }
     #mandar{
         width: auto;
@@ -60,6 +65,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .centrar{
     text-align: center;
@@ -72,7 +78,6 @@
 .number{
     text-align: center;
     color: #1a1b1f;
-    opacity: 0.9;
     font-size: 16px;
     line-height: 28px;
 }
@@ -81,7 +86,8 @@
     font-size: 12px;
     line-height: 20px;
     color: #1a1b1f;
-    opacity: 0.6;
+    
+    
 }
 #salto{
     color: transparent;
@@ -90,10 +96,10 @@
 }
 #email{
     color: #1a1b1f;
-    opacity: 0.6;
-    font-size: 20px;
-    line-height: 34px;
+    font-size: 14px;
+    line-height: 22px;
     text-align: center;
+    
 }
 /* Telefonos.jsx css styles END*/
 
@@ -103,4 +109,7 @@
     font-size: 36px;
     line-height: 50px;
     font-weight: 400;
+}
+.col-sm-2{
+    margin: 5px;
 }
