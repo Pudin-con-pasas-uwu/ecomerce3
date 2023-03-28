@@ -1,4 +1,5 @@
 /* titulo_contact.jsx css styles START*/
+
 .titulo{
     text-align: center;
     padding-top: 3%;
@@ -44,6 +45,8 @@
 .col-sm-3{
     padding: 5px;
     margin: 5px;
+    width: 660px;
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -53,6 +56,9 @@
     }
     #mandar{
         width: auto;
+    }
+    .col-sm-3{
+        width: 90%;
     }
   }
 /* contact_form.jsx css styles END*/
@@ -111,5 +117,5 @@
     font-weight: 400;
 }
 .col-sm-2{
-    margin: 5px;
+    width: 250px;
 }
