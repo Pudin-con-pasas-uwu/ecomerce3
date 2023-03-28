@@ -67,7 +67,7 @@
     margin-top: 60px;
     margin-bottom: 150px;
     width: 100%;
-    align-items: center;
+    text-align: justify;
   }
 .abouttext{
   font-size: 14px;
@@ -102,9 +102,9 @@
     margin-left: auto;
     text-align: center;
   }
-  .aboutphilosophy h2{
+  .aboutphilosophy h1{
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     line-height: 50px;
     font-weight: 400;
     color: #1a1b1f;
@@ -140,7 +140,7 @@
     .abouttitle2 p{
       text-align: center;
       font-size: 18px;
-    }
+    }  
   }
   /* ---------------------------------ABOUT US END --------------------*/
   /*----------------NAV------------*/

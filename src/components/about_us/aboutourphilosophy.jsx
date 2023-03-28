@@ -9,7 +9,7 @@ const Aboutourphilosophy = () => {
               Nuestra filosofía es la de dar siempre el mejor trato y servicio a nuestros clientes, para así crearles una nueva pagina favorita en donde ellos siempre puedan obtener lo que buscan sin ningún problema.
               </div>
               <div className="abouttextdr">
-              - Dr. Seuss, ¡Oh, cuán lejos llegarás!.
+              - Equipo FRONT END.
               </div>
             </div>
           </div>

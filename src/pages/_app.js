@@ -2,6 +2,7 @@
 import '@/styles/globals.css'
 import '@/styles/inicio.css'
 import '@/styles/About.css'
+import '@/styles/AboutOurTeam.css'
 import '@/styles/Login&Register.css'
 import '@/styles/ContactUs.css'
 import '@/styles/pagos.css'
