@@ -7,6 +7,7 @@ import '@/styles/Login&Register.css'
 import '@/styles/ContactUs.css'
 import '@/styles/pagos.css'
 import '@/styles/Productos.css'
+import '@/styles/menuCategory.css'
 
 
 

@@ -12,8 +12,8 @@ const Navpage = () => {
     <Link href="/" className="logonav">Store</Link>
   
   <input className="menu-btn" type="checkbox" id="menu-btn" />
-  <label className="menu-icon" for="menu-btn"><span className="navicon"></span></label>
-  <ul class="menu">
+  <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
+  <ul className="menu">
     <li><Link href="/aboutpage" className="mt-4">Sobre Nosotros</Link></li> 
     <li><Link href="/Contact_us" className="mt-4">Contactanos</Link></li>
     <li><Link href="/LoginPage" className="mt-4">LOGIN</Link></li>

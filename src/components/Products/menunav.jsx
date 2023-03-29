@@ -1,27 +1,29 @@
 import Link from "next/link"; 
-import styles from '../../styles/butomSelectProducts.module.css';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from "axios";
 
-const menunav = (props) => {
-  return (
-    
-    <ul class="nav justify-content-center">
-      <li class="nav-item">
-        <a class="nav-link" href="#" id={styles.linksDelMenuNav}>Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" id={styles.linksDelMenuNav}>Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" id={styles.linksDelMenuNav}>Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" id={styles.linksDelMenuNav}>Link</a>
-      </li>
+const Menunav = () => {
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    axios.get('https://ecommerce-unid.000webhostapp.com/categories')
+      .then(response => {
+        setCategories(response.data.rows);
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }, []);
+
+return (
+    <ul className="nav categoriesNav">
+      {categories.map(category => (
+        <li key={category.id}>
+          <Link href='#' className="MenuCategory">{category.name}</Link>
+        </li>
+      ))}
     </ul>
   );
 };
 
-
-
-export default menunav; // Exportamos el componente Cardsection
+export default Menunav;

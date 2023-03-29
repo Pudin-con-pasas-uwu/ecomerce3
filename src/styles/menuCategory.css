@@ -1,0 +1,13 @@
+.MenuCategory {
+    margin-right: 20px;
+}
+.MenuCategory:hover{
+    color: #b02222;
+    font-weight: 600;
+}  
+.categoriesNav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
