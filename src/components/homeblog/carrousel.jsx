@@ -10,8 +10,8 @@ const Carrousel = () => {
   return (
     <div className="container carrucel">
       <div className="title-container">
-         <h1 className='font1 text-center'>Unidzon</h1>
-          <p className='font2 text-center'>Lo buscas, Lo encuentras</p>
+         <h1 className='font1Left text-center'>Unid</h1><h1 className='font1Right text-center'>Zone</h1>
+          <p className='font2 text-center'>Lo buscas, lo encuentras</p>
       </div>
         <Carousel activeIndex={imagen} onSelect={handleSelect} interval={4000}>
             <Carousel.Item>
