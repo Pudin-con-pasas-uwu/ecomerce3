@@ -6,19 +6,30 @@
   background-repeat: no-repeat;
   max-width: 95vw; /* Cambia el ancho del container al 80% del ancho de la pantalla */
 }
-.font1{
-  font-size: 60px;
+.font1Left{
   padding-top: 160px;
   color: #333333;
   font-size: 74px;
   line-height: 80px;
   margin-bottom: 10px;
-  
+  display: inline-block;
+  font-weight: 900;
+  text-shadow: black 1px 0 10px;
+}
+.font1Right{
+  color: red;
+  font-size: 74px;
+  line-height: 80px;
+  margin-bottom: 10px;
+  display: inline-block;
+  font-weight: 900;
+  text-shadow: red 1px 0 10px;
 }
 .font2{
   font-size: 30px;
   line-height: 34px;
   color: #333333;
+  font-weight: bolder;
 }
 .mid{
   text-align: center;

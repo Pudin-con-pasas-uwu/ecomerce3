@@ -15,7 +15,7 @@
             <div className="card" id="TeamCard">
               <img className="CardImg Team2"/>
               <div className="card-body">
-                <h5 className="card-title">José Arias</h5>
+                <h5 className="card-title">Gerardo Castro</h5>
                 <p className="card-text">Front end</p>
               </div>
             </div>
@@ -24,7 +24,7 @@
             <div className="card" id="TeamCard">
               <img className="CardImg Team3"/>
               <div className="card-body">
-                <h5 className="card-title">Gerardo Castro</h5>
+                <h5 className="card-title">Karen Guillen</h5>
                 <p className="card-text">Front end</p>
               </div>
             </div>
@@ -33,7 +33,7 @@
             <div className="card" id="TeamCard">
               <img className="CardImg Team4"/>
               <div className="card-body">
-                <h5 className="card-title">Karen Guillen</h5>
+                <h5 className="card-title">José Arias</h5>
                 <p className="card-text">Front end</p>
               </div>
             </div>
@@ -42,7 +42,7 @@
             <div className="card" id="TeamCard">
               <img className="CardImg Team5"/>
               <div className="card-body">
-                <h5 className="card-title">Moana Rivera</h5>
+                <h5 className="card-title">Juan Estrella</h5>
                 <p className="card-text">Front end</p>
               </div>
             </div>
@@ -51,7 +51,7 @@
             <div className="card" id="TeamCard">
               <img className="CardImg Team6"/>
               <div className="card-body">
-                <h5 className="card-title">Juan Estrella</h5>
+                <h5 className="card-title">Moana Rivera</h5>
                 <p className="card-text">Front end</p>
               </div>
             </div>
