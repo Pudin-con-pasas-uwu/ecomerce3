@@ -1,24 +1,24 @@
 
   h2.monthly{
-    font-size: 36px;
+    font-size: 46px;
+    font-weight: 600;
     line-height: 50px;
+    margin-top: 8%;
   }
   .suscribe{
-    margin-top: 10px;
-    margin-bottom: 15px;
-    align-content: center ;
+    margin-bottom: 3%;
    }
   
   .phrase_news{
-     line-height: 26px;
-    letter-spacing: 0;
+    line-height: 26px;
+    letter-spacing: 1;
     font-size: 14px;
     margin: auto;
     flex-direction: column;
-    width: 45%;
+    width: 55%;
     min-width:389px;
     color: #1a1b1f;
-    opacity: 0.6;
+
   }
   
   .p.news{
@@ -28,32 +28,32 @@
   }
   
   .news{
-    margin-top: 3%;
+    font-style: italic;
+    margin-top: 5%;
     margin-bottom: 2px;
   }
   
   .enteremail{
-    width: 330px;
+    width: 40%;
     margin-right: 10px;
-    margin-bottom: 0px;
     padding: 9px 17px;
     border: 1px solid #eeeded;
-    background-color: #fff;
+    background-color: #f4f4f4;
+    color: #1a1b1f;
     border-radius: 0px;
     font-size: 14px;
     line-height: 26px;
-    opacity: 0.6;
     align-items: left;
     color: #1a1b1f;
   }
   
   .submit{
-    --font-mono: 'Montserrat';
     background-color: #1a1b1f;
     font-size: 12px;
     line-height: 20px;
     color: #fff;
     padding: 12px 24px;
+    margin-top: 5%;
     text-align: center;
     letter-spacing: 2px;
     border: 0;
@@ -67,32 +67,67 @@
 
   @media (min-width: 320px) and (max-width: 568px) {
     
+    .suscribe{
+      width: 95%;
+      height: auto;
+      margin-left: 2.5%;
+      display: block;
+      
+    }
     .submit{
       margin-top: 15px;
-      width: auto;
+      padding: 6%;
+      width: 90%;
+      font-size: large;
     }
     .monthly{
-      margin-left: 3%;
+      width: 55%;
+      margin-left: 25%;
       text-align: center;
+      display: flex;
+      align-content: center;
+      justify-content: center;
     }
 
+    .phrase_news{
+      margin-bottom: 10%;
+      font-size: large;
+      line-height: 35px;
+    }
     .news{
       display: flex;
       align-content: center;
-      width: 70%;
-      margin-left: 17%;
+      justify-content: center;
+      width: 90%;
+      margin-left: 3%;
+      margin-top: 8%;
     }
     .enteremail{
       display: flex;
-      width: 100%;
+      align-content: center;
+      justify-content: center;
+      margin-left: 5%;
+      padding: 5%;
+      width: 90%;
       overflow: hidden;
       position: relative;
+      font-size: large;
     }
-    .submit{
-      width: 100%;
-    }
+
 }
 
-@media ( min-width: 321px ) and ( max-width: 568px ){
+@media ( min-width: 569px ) and ( max-width: 768px ){
+
+  .monthly{
+    margin-top: 50%;
+  }
+
+  
+}
+@media screen and ( min-width: 1220px ) and ( max-width: 1440px ){
+
+  .suscribe{
+    margin-left: 23%;
+  }
   
 }
