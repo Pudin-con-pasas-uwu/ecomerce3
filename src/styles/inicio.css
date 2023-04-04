@@ -1,7 +1,7 @@
 /* INICIO CSS STYLE START */
 .dream{
   background-image: url(../img/placer3.jpg);
-  background-size: cover; 
+  background-size: contain; 
   background-position: center;
   background-repeat: no-repeat;
   max-width: 95vw; /* Cambia el ancho del container al 80% del ancho de la pantalla */
