@@ -53,7 +53,7 @@ const LoginPage = () => {
           <main >
             <div className="LoginPage_h1">
               <h1><Link href="/">Regresar</Link></h1>
-              {error && <div>{error}</div>}
+              {error && <div id="loginPage_error">{error}</div>}
             </div>
             <div className="form-signin">
 
