@@ -52,6 +52,13 @@
 
   @media screen and (max-width:320px){
 
+    .imgen{
+      padding-bottom: 10%;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      margin-right: 11%;
+    }
 
     .titulo{
       text-align: center;
@@ -63,7 +70,7 @@
       text-align: center;
       align-content: center;
       justify-content: center;
-      margin-left: 55%;
+      margin-bottom: 20%;
     }
 
     .copyright{
@@ -71,17 +78,17 @@
       flex-wrap: wrap;
       align-content: center;
       justify-content: center;
-      margin-left: 43%;
+      margin-right: 2%;
     }
   }
   
-  @media screen and (min-width: 320px) and (max-width: 568px){
+  @media screen and (min-width: 321px) and (max-width: 568px){
     
     .imgen{
       display: flex;
       justify-content: center;
       align-content: center;
-      margin-right: 5%;
+      margin-right: 15%;
       margin-bottom: 25%;
       margin-top: 5%;
     }
@@ -90,7 +97,6 @@
       text-align: center;
       align-content: center;
       margin-bottom: 35%;
-      font-size: large;
     }
 
     .columna{
@@ -109,8 +115,7 @@
       flex-wrap: wrap;
       align-content: center;
       justify-content: center;
-      margin-left: 30%;
-      font-size: 18px;
+      margin-right: 10%;
     }
   }
 

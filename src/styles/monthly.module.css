@@ -5,9 +5,11 @@
     line-height: 50px;
     margin-top: 8%;
   }
-  .suscribe{
-    margin-bottom: 3%;
-   }
+
+  h2.monthly:hover{
+    color: #B02222;
+    font-weight: lighter;
+  }
   
   .phrase_news{
     line-height: 26px;
@@ -16,7 +18,7 @@
     margin: auto;
     flex-direction: column;
     width: 55%;
-    min-width:389px;
+    min-width:10%;
     color: #1a1b1f;
 
   }
@@ -28,11 +30,20 @@
   }
   
   .news{
+    display: flex;
+    align-content: center;
+    justify-content: center;
     font-style: italic;
     margin-top: 5%;
-    margin-bottom: 2px;
+    margin-left: 8%;
+    width: 80%;
   }
   
+.news:hover{
+  font-weight: bolder;
+  color: #B02222;
+}
+
   .enteremail{
     width: 40%;
     margin-right: 10px;
@@ -65,24 +76,56 @@
   }
   
 
-  @media (min-width: 320px) and (max-width: 568px) {
+  @media screen and (min-width: 320px) and (max-width: 371px) {
+    
+    .submit{
+      margin-top: 15px;
+      padding: 4%;
+      width: 80%;
+    }
+    .monthly{
+      text-align: center;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      margin-left: 5%;
+    }
+
+    .phrase_news{
+      margin-bottom: 10%;
+      line-height: 30px;
+    }
+    .news{
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 15%;
+    }
+    .enteremail{
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      margin-left: 10%;
+      padding: 3%;
+      width: 80%;
+      overflow: hidden;
+      position: relative;
+    }
+
+}
+
+@media screen and (min-width: 372px) and (max-width: 568px) {
     
     .suscribe{
-      width: 95%;
-      height: auto;
-      margin-left: 2.5%;
-      display: block;
-      
+      padding: 0%;
     }
     .submit{
       margin-top: 15px;
-      padding: 6%;
-      width: 90%;
-      font-size: large;
+      padding: 3%;
+      width: 70%;
     }
     .monthly{
-      width: 55%;
-      margin-left: 25%;
       text-align: center;
       display: flex;
       align-content: center;
@@ -91,43 +134,32 @@
 
     .phrase_news{
       margin-bottom: 10%;
-      font-size: large;
-      line-height: 35px;
+      line-height: 30px;
     }
     .news{
       display: flex;
       align-content: center;
       justify-content: center;
-      width: 90%;
-      margin-left: 3%;
+      flex-wrap: wrap;
+      width: 80%;
+      margin-left: 10%;
       margin-top: 8%;
     }
     .enteremail{
-      display: flex;
-      align-content: center;
-      justify-content: center;
-      margin-left: 5%;
-      padding: 5%;
-      width: 90%;
+      margin-left: 2%;
+      padding: 3%;
+      width: 70%;
       overflow: hidden;
       position: relative;
-      font-size: large;
     }
 
 }
 
-@media ( min-width: 569px ) and ( max-width: 768px ){
+@media screen and ( min-width: 569px ) and ( max-width: 768px ){
 
   .monthly{
     margin-top: 50%;
   }
 
-  
-}
-@media screen and ( min-width: 1220px ) and ( max-width: 1440px ){
-
-  .suscribe{
-    margin-left: 23%;
-  }
   
 }
