@@ -8,6 +8,56 @@
 .categoriesNav {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 20px;
+}
+.MenuCategory{
+    color: #1a1b1f;
+}
+
+
+/* Products  */
+.card-bodyProducts h2, .card-bodyProducts p {
+    margin: 3px;
+}
+.card-bodyProducts h2 {
+    position: absolute;
+    bottom: 110px;
+    font-size: 19px;
+    line-height: 34px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .desc_corta{
+    position: absolute;
+    bottom: 40px;
+    opacity: 0.6;
+    font-size: 13px;
+    line-height: 26px;
+    color: rgb(234, 232, 232);
+  }
+  .precio{
+    color: #ffffff;
+    position: absolute;
+    bottom: 10px;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 1px;
+  }
+#cardProduct{
+margin: 10px;
+width: 100%;
+margin-top: 40px;
+}
+.card-containerProducts{
+  display: flex;
+  flex-wrap: wrap;
+}
+.NoProductsTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  
 }

@@ -19,7 +19,9 @@ return (
     <ul className="nav categoriesNav">
       {categories.map(category => (
         <li key={category.id}>
-          <Link href='#' className="MenuCategory">{category.name}</Link>
+          <Link href={`/CategoriesP/${category.id}`} className="MenuCategory">
+            {category.name}
+            </Link>
         </li>
       ))}
     </ul>
