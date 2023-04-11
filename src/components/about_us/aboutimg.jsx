@@ -2,11 +2,15 @@ const Aboutimg = () => {
     return (
       <main>
         <div className="sectionabout">
-      <div className="container" id="about-content">
-            <div className="img">
-            </div>
-            <div className="img2">
-            </div>
+      <div className="container-fluid" id="about-content">
+        <div className="row">
+          <div className="col-md-6">
+            <div className="img"> </div>
+          </div>
+          <div className="col-md-6">
+            <div className="img"></div>
+          </div>
+        </div>
           </div>
       </div>
       </main>

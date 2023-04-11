@@ -1,5 +1,6 @@
 #FeatContainer{
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 .HrBlak{
     color:black;
@@ -55,4 +56,5 @@
     height: 50px;
     width: 100%;
     border-radius: 0%;
+    margin-bottom: 5px;
 }
