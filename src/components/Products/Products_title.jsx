@@ -4,7 +4,7 @@ const ProductsTitle = () => {
     return (
         <div>
             <div className="container" id='producto_title'>
-                <h1> Nuestros Productos</h1>
+                <h1 id='StyleTextHeader' > Nuestros Productos</h1>
             </div>
         </div>
     );

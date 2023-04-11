@@ -1,7 +1,7 @@
 const OurTeam = () => {
     return (
         <div>
-            <h2 className="TitleTeam">Nuestro equipo</h2>
+            <h2 className="TitleTeam" id="StyleTextHeader">Nuestro equipo</h2>
         </div>
     );
 }

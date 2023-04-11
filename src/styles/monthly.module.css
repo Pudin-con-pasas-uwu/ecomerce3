@@ -124,10 +124,10 @@
 
   
 }
-@media screen and ( min-width: 1220px ) and ( max-width: 1440px ){
+ @media screen and ( min-width: 1220px ) and ( max-width: 1440px ){
 
   .suscribe{
-    margin-left: 23%;
+    /* margin-left: 23%; */
   }
   
 }

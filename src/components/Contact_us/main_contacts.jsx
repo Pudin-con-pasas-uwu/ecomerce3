@@ -4,7 +4,7 @@ const MainContacts = () => {
     return (
         <div>
             <div className="container" id='contacto_principal_titulo'>
-                <h2>Contactos principales</h2>  
+                <h2 id='StyleTextHeader'>Contactos principales</h2>  
             </div>
         </div>
     );
