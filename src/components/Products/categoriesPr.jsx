@@ -10,7 +10,6 @@ const CategoriesPr = (props) => {
   var CatProductsFilter = props.CategoriesP.rows.filter(function (category) {
     return category.category_id === props.category_id;
   })
-  const router = useRouter()
 
   if (CatProductsFilter.length === 0) {
     return(
