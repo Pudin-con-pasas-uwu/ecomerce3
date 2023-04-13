@@ -4,9 +4,9 @@ const Aboutustitulo = () => {
         <div className="sectionabout">
          <div className="aboutheader">
          <div className="aboutcontenido">
-          <div className="abouttitle">
-           ¿Quiénes somos?
-           <br />
+          <div className="abouttitle" id="StyleTextHeader">
+            ¿Quiénes somos?
+            <br />
           </div>
          <div className="aboutsubt">
          Somos una empresa de elaboración de software que se dedica a la venta de productos.

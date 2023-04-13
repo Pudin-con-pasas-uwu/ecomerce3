@@ -4,7 +4,7 @@ const Aboutlifestory = () => {
         <div className="sectionabout">
          <div className="container" id="about-content">
           <div className="abouttitle2">
-            <h1>Esta es nuestra historia</h1>
+            <h1 id="StyleTextHeader"  >Esta es nuestra historia</h1>
           <p>El comienzo de una nueva era: Unidzon</p>
           </div>
           </div>

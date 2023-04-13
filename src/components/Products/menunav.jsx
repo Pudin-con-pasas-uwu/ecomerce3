@@ -19,7 +19,7 @@ return (
     <ul className="nav categoriesNav">
       {categories.map(category => (
         <li key={category.id}>
-          <Link href='#' className="MenuCategory">{category.name}</Link>
+          <Link href='#' className="MenuCategory" id="MenuProductsStyles" >{category.name}</Link>
         </li>
       ))}
     </ul>

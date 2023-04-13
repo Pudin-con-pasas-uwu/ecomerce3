@@ -4,7 +4,7 @@ const Space = () => {
   return (
     <div>
       <div className="container space">
-        <h2 className="Espacio ">Esta es tu tienda</h2>
+        <h2 className="Espacio " id="StyleTextHeader" >Esta es tu tienda</h2>
         <p className="Espacio2 ">
         Porque comprar en otras tiendas, cuando puedes comprar en esta ;3
         </p>
