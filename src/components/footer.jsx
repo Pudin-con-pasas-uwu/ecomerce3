@@ -25,7 +25,7 @@ const Footer  = () => {
                     </div>
                     <div className="col-sm-2 seccion">
                         <div className={styles.columna}>
-                            <h5 className={styles.titulo}>INICIO</h5>
+                            <h5 className={styles.titulo} i>INICIO</h5>
                             <p><Link className={styles.item} href="/">Inicio</Link></p>
                             <p><Link className={styles.item} href="/aboutpage">About Us</Link></p>
                             <p><Link className={styles.item} href="/Contact_us">Contacto</Link></p>

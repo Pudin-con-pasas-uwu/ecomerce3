@@ -22,6 +22,7 @@ return (
           <Link href={`/CategoriesP/${category.id}`} className="MenuCategory">
             {category.name}
             </Link>
+
         </li>
       ))}
     </ul>

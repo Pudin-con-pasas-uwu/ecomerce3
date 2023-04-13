@@ -22,17 +22,17 @@ const DetaillProducts = ({ user }) => {
     return (
         // Renderizamos el componente Layout
         <Layout>
-            <div className='container' id={styles.FeatContainer}>
+            <div className='container-fluid' id={styles.FeatContainer}>
                 <div className='row'>
-                    <div className='col'>
+                    <div className='col-md-6'>
                         <ImgProducts />
                     </div>
-                    <div className='col'>
-                        <h1>{id}{user.product_name}</h1>
+                    <div className='col-md-6'>
+                        <h1 id='StyleTextHeader' >{id}{user.product_name}</h1>
                         <h1 className={styles.Letterh1}>$ {user.price} MNX</h1>
                         <p className={styles.LetterP}>{user.description}</p>
                         <hr className={styles.HrBlak}></hr>
-                        <div className='container'>
+                        <div className='container-fluid'>
                             <div className='row'>
                                 <DescriptionProdicts />
                                 <div class="col">

@@ -11,7 +11,7 @@ const Monthly  = () => {
         <div className="container-fluid Moana">
             <div className="row">
                 <div className={styles.suscribe}>
-                    <h2 className={styles.monthly}>BOLETÍN MENSUAL</h2>
+                    <h2 className={styles.monthly} id>BOLETÍN MENSUAL</h2>
                     <div className={styles.phrase_news}>
                         <p className={styles.news}>¡Suscribete y unete a nuestra comunidad de anillo, donde encontrarás nuevas galaxias, tesoros, sortilegios Weasley y más...!</p>
                     </div>

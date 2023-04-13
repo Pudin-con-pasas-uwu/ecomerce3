@@ -87,4 +87,30 @@
 
 }
 
+/* pequeños cambios en la ui-design jose ramon */
 
+#MenuProductsStyles{
+  text-decoration: none;
+  font-weight: bolder;
+}
+#MenuProductsStyles:hover{
+  color: black;
+}
+
+#StyleUl{
+  font-weight: bolder;
+}
+#StyleUl:hover{
+  color: black;
+}
+
+#StyleTextHeader{
+  font-weight: bolder!important;
+}
+
+.aboutheader{
+  --opacidad-negro: 0.5!important;
+  background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), 
+  rgba(0, 0, 0, var(--opacidad-negro))), url("/_next/static/media/example.e7d8a1f8.jpg")!important;
+  
+}
