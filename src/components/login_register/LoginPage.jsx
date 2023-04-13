@@ -35,7 +35,7 @@ const LoginPage = () => {
         body: JSON.stringify(form)
       };
 
-      const res = await fetch("https://ecommerce-unid.000webhostapp.com/auth", options);
+      const res = await fetch("https://ecommerunid.sistemasdelcaribe.com/auth", options);
       const data = await res.json();
       console.log(data);
 

@@ -44,7 +44,7 @@ const RegisterPage = () => {
           method: 'POST',
           body: JSON.stringify(form)
         };
-          const res = await fetch('http://ecommerce-unid.000webhostapp.com/users', options);
+          const res = await fetch('https://ecommerunid.sistemasdelcaribe.com/insert_user', options);
           const data = await res.json();
           console.log(data);
         router.push('/')
