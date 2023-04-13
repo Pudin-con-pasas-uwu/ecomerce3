@@ -4,13 +4,12 @@ import Link from 'next/link';
 
 const CategoriesPr = (props) => {
   if (!props.CategoriesP) {
-    return null; // or you can display a loading message or redirect to an error page
+    return null;
   }
 
   var CatProductsFilter = props.CategoriesP.rows.filter(function (category) {
     return category.category_id === props.category_id;
   })
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const router = useRouter()
 
   if (CatProductsFilter.length === 0) {

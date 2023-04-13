@@ -11,7 +11,7 @@ const Menunav = () => {
         setCategories(response.data.rows);
       })
       .catch(error => {
-        console.log(error);
+      console.log(error);
       });
   }, []);
 
