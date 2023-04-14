@@ -1,28 +1,33 @@
-#FeatContainer{
+#FeatContainer {
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.HrBlak{
-    color:black;
+
+.HrBlak {
+    color: black;
     opacity: 1;
     margin-bottom: 10px;
-} 
-.HrGris{
+}
+
+.HrGris {
     color: #848484;
 }
-#Select{
+
+#Select {
     border-radius: 0%;
     background-color: #f3f3f3;
     border-color: #cccccc;
     margin-bottom: 10px;
 }
-#SelectQuantity{
+
+#SelectQuantity {
     width: inherit;
     border-radius: 0%;
     border-color: #cccccc;
     margin-bottom: 10px;
 }
-.ButtonColor{
+
+.ButtonColor {
     font-size: 1.25rem;
     width: inherit;
     height: 50px;
@@ -31,30 +36,52 @@
     background-color: black;
     border: none;
 }
-#featImg{
+
+#featImg {
     display: flex;
     margin-bottom: 30px;
 
 }
-.Letterh1{
+
+#featImgCart {
+    margin-bottom: 0px;
+}
+
+.Letterh1 {
     color: #848484;
     font-size: 30px;
     line-height: 52px;
     font-weight: 400;
 
 }
-.LetterP{
+
+.LetterP {
     color: #848484;
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
     margin-bottom: 10px;
 }
-#bottomSpace{
+
+#bottomSpace {
     text-align: center;
     font-size: 1.25rem;
     height: 50px;
     width: 100%;
     border-radius: 0%;
     margin-bottom: 5px;
+}
+
+#ContentImg {
+    background-image: url(../img/Ejemplo.jpg);
+    width: 0%;
+    align-items: center;
+    background-position: 50% 50%;
+    justify-content: center;
+    align-items: center;
+    background-size:cover;
+}
+
+#ContainerSize {
+    max-width: 95%;
 }

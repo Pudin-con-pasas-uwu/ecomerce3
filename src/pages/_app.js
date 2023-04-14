@@ -11,6 +11,7 @@ import '@/styles/menuCategory.css'
 
 
 import { Montserrat } from 'next/font/google'
+import { StoreProvider } from 'utils/Store'
 
 
 const montserrat = Montserrat({
@@ -22,10 +23,11 @@ const montserrat = Montserrat({
 export default function App({ Component, pageProps }) {
   return(
       
-        <main className={montserrat.className}>
-            <Component {...pageProps} />
-          </main>
-    
+    <StoreProvider>
+      <main className={montserrat.className}>
+        <Component {...pageProps} />
+      </main>
+    </StoreProvider>
 
   ) 
 }

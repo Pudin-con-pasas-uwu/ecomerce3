@@ -1,19 +1,11 @@
+import Image from "next/image";
+import Ejemplo from "../../img/Ejemplo.jpg";
 import styles from '../../styles/butomSelectProducts.module.css';
-import ButtomAddCarrito from './ButtomAddCarrito';
 
-const ButtomBak = () => {
+const ImgProducts = () => {
     return (
-         <div class="container">
-            <div className='row'>
-                <div className='col-md-6'>
-                    <a class="btn btn-dark" id={styles.bottomSpace} tipe="button" href="javascript:history.back()">Go back</a>
-                </div>
-                <div className='col-md-6'>
-                    <ButtomAddCarrito />
-                </div>
-            </div>
-        </div>    
+        <Image src={Ejemplo} class="img-fluid" alt="imagen del producto"  id={styles.featImg}/>        
     );
   }
   
-  export default ButtomBak
+  export default ImgProducts
