@@ -4,7 +4,9 @@ import styles from '../../styles/butomSelectProducts.module.css';
 
 const ImgProductsCart = () => {
     return (
-        <Image src={Ejemplo} class="img-fluid" alt="imagen del producto" width={70} height={70} id={styles.featImgCart}/>        
+        <>
+            <Image src={Ejemplo} class="img-fluid" alt="imagen del producto" width={70} height={70} id={styles.featImgCart}/>        
+        </>
     );
   }
   
