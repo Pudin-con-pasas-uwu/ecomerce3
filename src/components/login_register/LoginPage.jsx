@@ -40,7 +40,7 @@ const LoginPage = () => {
       console.log(data);
 
       if (data?.token){
-        sessionStorage.setItem('userToken', data.token)
+        localStorage.setItem('token', data.token)
         setError('Bienvenido a la Comarca')
         router.push('/');
       }
