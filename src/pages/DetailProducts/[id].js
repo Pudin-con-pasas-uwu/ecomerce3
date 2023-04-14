@@ -2,13 +2,18 @@ import Layout from '../../components/Layouts/Layout'
 import ImgProducts from '../../components/componentsDetaillProducts/imgProducts'
 import DescriptionProdicts from '../../components/componentsDetaillProducts/descriptionProducts'
 import styles from '../../styles/butomSelectProducts.module.css';
-import ButtomBak from '../../components/componentsDetaillProducts/ButtomBak';
 // Importamos el hook useRouter para poder obtener el id del query string de la URL
 import { useRouter } from "next/router";
 import fetch from 'isomorphic-fetch'
+import React, { useContext } from 'react'
+import { Store } from '../../../utils/Store';
 
 const DetaillProducts = ({ user }) => {
     console.log(user)
+
+    // inicializar el estado
+    const { state, dispatch } = useContext(Store)
+
     // Usamos el hook useRouter para obtener el id del query string de la URL
     const router = useRouter();
     console.log(router)
@@ -17,6 +22,21 @@ const DetaillProducts = ({ user }) => {
     if (!user) {  //aqui ya no se usa el props
         router.reload();
         return null;
+    }
+
+    // funcion para agregar al carrito
+    // donde enviamos a guardar en nuestra variable de estado global
+    const addToCartHandler = () => {
+        const existItem = state.cart.cartItems.find(x => x.id === user.id)
+        const quantity = existItem ? existItem.quantity + 1 : 1
+
+        if (user.stock < quantity) {
+            alert("sorry. Product is out of stock")
+            return;
+        }
+
+        dispatch({ type: 'CARD_ADD_ITEM', payload: { ...user, quantity } })
+        // router.push('/cart')
     }
 
     return (
@@ -36,11 +56,20 @@ const DetaillProducts = ({ user }) => {
                             <div className='row'>
                                 <DescriptionProdicts />
                                 <div class="col">
-                                    <p>{user.stock}</p>
+                                    <p>{user.stock > 0 ? "In stock" : "Unavailable"}</p>
                                     <p>{user.creation_date}</p>
                                 </div>
                             </div>
-                            <ButtomBak/>
+                            <div class="container">
+                                <div className='row'>
+                                    <div className='col-md-6'>
+                                        <a class="btn btn-dark" id={styles.bottomSpace} tipe="button" href="javascript:history.back()">Go back</a>
+                                    </div>
+                                    <div className='col-md-6'>
+                                        <button class="btn btn-dark" id={styles.bottomSpace} onClick={addToCartHandler}>ADD</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

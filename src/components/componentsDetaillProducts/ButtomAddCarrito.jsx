@@ -1,11 +1,12 @@
 import styles from '../../styles/butomSelectProducts.module.css';
 
-
-
-const ButtomAddCarrito = () => {
+const DescriptionProdicts = () => {
     return (
-        <a class="btn btn-dark" id={styles.bottomSpace} tipe="button" href="">ADD</a>
+        <div class="col">
+            <p className={styles.LetterP}>Stock</p>
+            <p className={styles.LetterP}>date creation</p>
+        </div>
     );
   }
   
-  export default ButtomAddCarrito
+  export default DescriptionProdicts
