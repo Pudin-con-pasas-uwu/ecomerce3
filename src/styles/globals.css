@@ -20,24 +20,17 @@
 
 /*Footer -> CSS de las columnas*/
 
-.futer{
-  max-width: 100%;
-}
 
 .seccion{
   line-height: 26px;
-  display: flex;
 }
 
 @media screen and (max-width:320px) {
-
-    .futer{
-    margin-left: 13%;
-    margin-top: 5%;
+  .futer{
     display: flex;
-    flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+    margin-bottom: 20%;
   }
   .seccion{
     align-content: center;
@@ -47,18 +40,22 @@
   }
 }
 
-@media screen and (min-width:321px) and (max-width: 568px){
 
-  .futer{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-  }
+@media screen and (min-width:321px) and (max-width: 420px){
+
   .seccion{
     align-content: center;
     justify-content: center;
-    margin-left: 18%;
+    margin-left: 19%;
+    margin-bottom: 22%;
+  }
+}
+@media screen and (min-width:421px) and (max-width: 568px){
+
+  .seccion{
+    align-content: center;
+    justify-content: center;
+    margin-left: 9%;
     margin-bottom: 22%;
   }
 }

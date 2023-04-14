@@ -1,6 +1,7 @@
 .MenuCategory {
     /* margin-right: 20px; */
     color: #1a1b1f;
+    text-decoration: inherit;
     margin: 10px;
 }
 .MenuCategory:hover{
