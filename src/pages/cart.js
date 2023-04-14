@@ -85,7 +85,7 @@ export default function Cart() {
                 {cartItems.reduce((a, c) => a + c.quantity * c.price, 0)}
               </div>
             </div>
-            <Link href={`/checkout`} type="button" class="btn btn-dark" id={styles.bottomSpace}>pay</Link>
+            {/* <Link href={`/checkout`} type="button" class="btn btn-dark" id={styles.bottomSpace}>pay</Link> */}
             {/* <Link href={`/checkout`} type="button" class="btn btn-dark" onClick={} id={styles.bottomSpace}>pay</Link> */}
           </div>
         )}
