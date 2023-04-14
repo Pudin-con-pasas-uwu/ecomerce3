@@ -1,4 +1,4 @@
-import Link from "next/link"; 
+import Link from "next/link";
 import PropTypes from 'prop-types'; // Importamos la librería prop-types para validar las propiedades que recibimos
 import { Router } from "next/router";
 
@@ -8,7 +8,7 @@ const Cardsection = (props) => {
       {Array.isArray(props.users.rows) && props.users.rows.length > 0 ?
         props.users.rows.map(user => (
           <Link href={`/DetailProducts/${user.id}`} className="card" key={user.id} >
-          {/* Usamos el componente Link de Next.js y definimos el href con la ruta dinámica "/user/[id]" y el as con la ruta completa a la que se debe redirigir. Agregamos también el className y el key de cada elemento*/}
+            {/* Usamos el componente Link de Next.js y definimos el href con la ruta dinámica "/user/[id]" y el as con la ruta completa a la que se debe redirigir. Agregamos también el className y el key de cada elemento*/}
             <div className="">
               <h2 className="claro" id="StyleTextHeader">{user.product_name}</h2>
               <p id="desc_corta">{user.short_desc}</p>
@@ -17,7 +17,7 @@ const Cardsection = (props) => {
           </Link>
         )) : null
       }
-    </div> 
+    </div>
   );
 };
 

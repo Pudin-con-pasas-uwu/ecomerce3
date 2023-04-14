@@ -6,7 +6,7 @@ import ProductsTitle from '@/components/Products/Products_title'
 import Menunav from '@/components/Products/menunav'
 import { useRouter } from 'next/router';
 
-const Productos = (props) =>{
+const Productos = (props) => {
   const router = useRouter();
 
   if (!props.users) {
@@ -18,12 +18,12 @@ const Productos = (props) =>{
     <main>
       <Layout>
         <ProductsTitle />
-       <Menunav />
-        <Cardsection  users={props.users}/>
+        <Menunav />
+        <Cardsection users={props.users} />
       </Layout>
     </main>
   )
-  
+
 }
 
 // // La función Productos es el componente principal de la página 

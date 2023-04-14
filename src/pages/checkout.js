@@ -5,11 +5,11 @@ import Pagostitle from '@/components/Checkout/pagostitle'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home () {
+export default function Home() {
   return (
     <Layout>
-        <Pagostitle/>
-        <Pagos/>
+      <Pagostitle />
+      <Pagos />
     </Layout>
   )
 }
