@@ -148,6 +148,9 @@
       margin-left: 30px;
       margin-right: 30px;
     }
+    .logonav{
+      color: #161616;
+    }
     .logonav:hover{
         color: #b02222;
     }

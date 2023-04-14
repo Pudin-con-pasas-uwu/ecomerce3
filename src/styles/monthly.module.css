@@ -15,8 +15,7 @@
     font-size: 14px;
     margin: auto;
     flex-direction: column;
-    width: 55%;
-    min-width:389px;
+    width: 70%;
     color: #1a1b1f;
 
   }
@@ -64,16 +63,26 @@
     color: #fff;
   }
   
-
-  @media (min-width: 320px) and (max-width: 568px) {
-    
-    .suscribe{
-      width: 95%;
-      height: auto;
-      margin-left: 2.5%;
-      display: block;
-      
+  @media screen and (min-width:280px) and (max-width:319px){
+    .monthly{
+      margin-bottom: 10%;
     }
+
+    .phrase_news{
+      margin-bottom: 10%;
+    }
+
+    .enteremail{
+      width: auto;
+      margin-left: 5%;
+    }
+    .submit{
+    width: 86%;
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 568px) {
+    
     .submit{
       margin-top: 15px;
       padding: 6%;
@@ -82,7 +91,8 @@
     }
     .monthly{
       width: 55%;
-      margin-left: 25%;
+      margin-left: 23%;
+      margin-bottom: 15%;
       text-align: center;
       display: flex;
       align-content: center;
@@ -90,7 +100,7 @@
     }
 
     .phrase_news{
-      margin-bottom: 10%;
+      margin-bottom: 15%;
       font-size: large;
       line-height: 35px;
     }
@@ -122,12 +132,5 @@
     margin-top: 50%;
   }
 
-  
-}
- @media screen and ( min-width: 1220px ) and ( max-width: 1440px ){
-
-  .suscribe{
-    /* margin-left: 23%; */
-  }
   
 }
