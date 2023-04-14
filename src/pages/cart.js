@@ -7,7 +7,7 @@ import React, { useContext } from 'react'
 import Link from 'next/link'
 // import Ejemplo from "../img/Ejemplo.jpg";
 import styles from '../styles/butomSelectProducts.module.css';
-import ImgProductsCart from '@/components/componentsDetaillProducts/ImgProductsCart'
+import ImgProductsCart from '../components/componentsDetaillProducts/ImgProductsCart'
 // const inter = Inter({ subsets: ['latin'] })
 
 export default function Cart() {
