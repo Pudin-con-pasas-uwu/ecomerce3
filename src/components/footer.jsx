@@ -1,12 +1,26 @@
 import Link from 'next/link'
+import React, { useState, useEffect } from 'react';
+import axios from "axios";
 import Image from 'next/image'
 import logo from '../img/logo.jpg'
 import styles from '../styles/footer.module.css'
 
 
 
-const Footer  = () => {
 
+const Footer  = () => {
+    const [categories, setCategories] = useState([]);
+
+    useEffect(() => {
+        axios.get('https://ecommerce-unid.000webhostapp.com/categories')
+          .then(response => {
+            setCategories(response.data.rows);
+          })
+          .catch(error => {
+          console.log(error);
+          });
+      }, []);
+      
     return(
         <footer>
             <div className={styles.container_footer}>
@@ -23,7 +37,7 @@ const Footer  = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className="col-sm-2 seccion">
+                    <div className="col-2 seccion">
                         <div className={styles.columna}>
                             <h5 className={styles.titulo} i>INICIO</h5>
                             <p><Link className={styles.item} href="/">Inicio</Link></p>
@@ -32,13 +46,19 @@ const Footer  = () => {
                             <p><Link className={styles.item} href="/Productos">Productos</Link></p>  
                         </div>
                     </div>
-                    <div className="col-sm-2 seccion">
+                    <div className="col-2 seccion">
                         <div className={styles.columna}>
-                            <h5 className={styles.titulo}>CATEGORIAS</h5>
-                            <p><Link className={styles.item} href="/Productos">Mangas</Link></p>
-                            <p><Link className={styles.item} href="/Productos">Apparel</Link></p>
-                            <p><Link className={styles.item} href="/Productos">Juegos</Link></p>
-                            <p><Link className={styles.item} href="/Productos">Series</Link></p>
+                            <h5 className={styles.titulo_1}>CATEGORIAS</h5>
+                            <div className={styles.lista}>
+                                {categories.map(category => (
+                                    <p key={category.id}>
+                                        <Link href={`/CategoriesP/${category.id}`} className={styles.item_1}>
+                                            {category.name}
+                                        </Link>
+                                    </p>
+                                ))}
+                            </div>
+                            
                         </div>
                     </div>
 

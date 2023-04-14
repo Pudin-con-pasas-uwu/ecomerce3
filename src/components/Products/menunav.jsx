@@ -11,7 +11,7 @@ const Menunav = () => {
         setCategories(response.data.rows);
       })
       .catch(error => {
-        console.log(error);
+      console.log(error);
       });
   }, []);
 
@@ -19,7 +19,10 @@ return (
     <ul className="nav categoriesNav">
       {categories.map(category => (
         <li key={category.id}>
-          <Link href='#' className="MenuCategory" id="MenuProductsStyles" >{category.name}</Link>
+          <Link href={`/CategoriesP/${category.id}`} className="MenuCategory">
+            {category.name}
+            </Link>
+
         </li>
       ))}
     </ul>

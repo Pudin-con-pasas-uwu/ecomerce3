@@ -11,6 +11,13 @@
 .LoginPage_h1 a:hover{
   color: #b02222;
 }
+#loginPage_error{
+  color: #b02222;
+  position: absolute;
+  width: 200px;
+  margin-top: 20px;
+  margin-left: calc(50% - 115px);
+}
 .form-signin {
     max-width: 330px;
     padding: 15px;

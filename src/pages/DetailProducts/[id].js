@@ -48,7 +48,7 @@ const DetaillProducts = ({ user }) => {
                         <ImgProducts />
                     </div>
                     <div className='col-md-6'>
-                        <h1 id='StyleTextHeader' >{id}{user.product_name}</h1>
+                        <h1 id='StyleTextHeader' >{user.product_name}</h1>
                         <h1 className={styles.Letterh1}>$ {user.price} MNX</h1>
                         <p className={styles.LetterP}>{user.description}</p>
                         <hr className={styles.HrBlak}></hr>
