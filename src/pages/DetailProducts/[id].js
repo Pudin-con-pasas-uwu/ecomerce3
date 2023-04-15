@@ -2,6 +2,7 @@ import Layout from '../../components/Layouts/Layout'
 import ImgProducts from '../../components/componentsDetaillProducts/imgProducts'
 import DescriptionProdicts from '../../components/componentsDetaillProducts/descriptionProducts'
 import styles from '../../styles/butomSelectProducts.module.css';
+
 // Importamos el hook useRouter para poder obtener el id del query string de la URL
 import { useRouter } from "next/router";
 import fetch from 'isomorphic-fetch'

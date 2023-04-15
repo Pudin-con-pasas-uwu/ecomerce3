@@ -1,15 +1,8 @@
-// import { Inter } from '@next/font/google'
 import Layout from '@/components/Layouts/Layout'
-import Image from 'next/image'
-// import Carrito from '@/components/Carrito'
-
 import { Store } from '../../utils/Store'
 import React, { useContext } from 'react'
 import Link from 'next/link'
-// import Ejemplo from "../img/Ejemplo.jpg";
 import styles from '../styles/butomSelectProducts.module.css';
-// import ImgProductsCart from '../components/componentsDetaillProducts/ImgProductsCart'
-// const inter = Inter({ subsets: ['latin'] })
 
 export default function Cart() {
 
@@ -54,15 +47,13 @@ export default function Cart() {
                 {cartItems.map((item) => (
                   <tr key={item.id}>
                     <td id={styles.ContentImg}>
-                    {/* <img src="../../public/imgs/Ejemplo" width={70} height={70} alt="img" /> */}
-                      
-                      {/* <ImgProductsCart /> */}
                       {/* <img src={item.image} width={70} height={70} alt="" /> */}
                     </td>
                     <td className='ContentImg'>{item.product_name}</td>
                     <td>
-                      <select
-                        value={item.stock}
+                      {item.stock > 0 ? "In stock" : "Unavailable"}
+                      {/* <select
+                        value={item.quantity}
                         onChange={(e) => updateCartHandler(item, e.target.value)}
                       >
                         {[...Array(item.stock).keys()].map(x => (
@@ -70,7 +61,7 @@ export default function Cart() {
                             {x + 1}
                           </option>
                         ))}
-                      </select>
+                      </select> */}
                     </td>
 
                     <td>{item.price}$</td>
@@ -81,12 +72,14 @@ export default function Cart() {
                 ))}
               </tbody>
             </table>
-
             <div>
               <div>
                 Subtotal: ({cartItems.reduce((a, c) => a + c.quantity, 0)}) : $
                 {cartItems.reduce((a, c) => a + c.quantity * c.price, 0)}
               </div>
+            </div>
+            <div className='text-center'>
+              <a class="btn btn-dark" id={styles.ButtonCheckout} tipe="button" href="/checkout">Proceed to payment</a>
             </div>
             {/* <Link href={`/checkout`} type="button" class="btn btn-dark" id={styles.bottomSpace}>pay</Link> */}
             {/* <Link href={`/checkout`} type="button" class="btn btn-dark" onClick={} id={styles.bottomSpace}>pay</Link> */}
