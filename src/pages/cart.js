@@ -79,7 +79,7 @@ export default function Cart() {
               </div>
             </div>
             <div className='text-center'>
-              <a class="btn btn-dark" id={styles.ButtonCheckout} tipe="button" href="/checkout">Proceed to payment</a>
+              <Link href="/checkout" className="btn btn-dark" id={styles.ButtonCheckout} tipe="button" >Proceed to payment</Link>
             </div>
             {/* <Link href={`/checkout`} type="button" class="btn btn-dark" id={styles.bottomSpace}>pay</Link> */}
             {/* <Link href={`/checkout`} type="button" class="btn btn-dark" onClick={} id={styles.bottomSpace}>pay</Link> */}
