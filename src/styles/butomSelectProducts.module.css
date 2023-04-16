@@ -85,3 +85,11 @@
 #ContainerSize {
     max-width: 95%;
 }
+#ButtonCheckout{
+    text-align: center;
+    font-size: 1.25rem;
+    height: 50px;
+    width: 50%;
+    border-radius: 0%;
+    margin: 20px;
+}

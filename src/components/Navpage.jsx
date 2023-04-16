@@ -52,7 +52,7 @@ const Navpage = () => {
             <li><Link href="/Contact_us" className="mt-4" id='StyleUl'>Contactanos</Link></li>
             <li><Link href="/LoginPage" className="mt-4" id='StyleUl'>LOGIN</Link></li>
             <li><Link href="/Productos" className="mt-4" id='StyleUl'>Productos</Link></li>
-            <li><Link href="/cart" className="mt-4" id='StyleUl'>
+            <li><Link href="/cart" className="mt-4" id='StyleUl' >
               Tu Carrito
               <span className='text-white bg-danger rounded p-1'>{cartItemsCount}</span>
             </Link>
