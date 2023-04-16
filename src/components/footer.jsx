@@ -12,7 +12,8 @@ const Footer  = () => {
     const [categories, setCategories] = useState([]);
 
     useEffect(() => {
-        axios.get('https://ecommerce-unid.000webhostapp.com/categories')
+        // axios.get('https://ecommerce-unid.000webhostapp.com/categories')
+        axios.get('https://ecommerunid.sistemasdelcaribe.com/all_categories')
           .then(response => {
             setCategories(response.data.rows);
           })

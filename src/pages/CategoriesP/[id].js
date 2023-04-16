@@ -30,7 +30,8 @@ const CategoriesP = (props) => {
 }
 
 CategoriesP.getInitialProps = async (ctx) => {
-    const URL = 'https://ecommerce-unid.000webhostapp.com/products/'
+    // const URL = 'https://ecommerce-unid.000webhostapp.com/products/'
+    const URL = 'https://ecommerunid.sistemasdelcaribe.com/all_products'
         const res = await fetch(URL)
         const data = await res.json()
         return {
