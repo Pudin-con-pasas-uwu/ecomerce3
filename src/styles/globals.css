@@ -95,10 +95,12 @@
 }
 
 #StyleUl{
+  color: #1a1b1f;
   font-weight: bolder;
 }
 #StyleUl:hover{
-  color: black;
+  color: #b02222;
+  /* color: black; */
 }
 
 #StyleTextHeader{
@@ -111,3 +113,4 @@
   rgba(0, 0, 0, var(--opacidad-negro))), url("/_next/static/media/example.e7d8a1f8.jpg")!important;
   
 }
+

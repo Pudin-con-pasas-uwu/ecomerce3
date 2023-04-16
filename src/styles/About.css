@@ -80,7 +80,7 @@
 }
   /*-----secc 3-----*/
   .img{
-    background-image: url(../images/exa2.jpg);
+    background-image: url(../images/exa1.jpg);
     max-width: 100%;
     width: 752px;
     height: 460px;
@@ -89,7 +89,9 @@
   }
   .img2{
     background-image: url(../images/exa2.jpg);
-    height: 620px;
+    max-width: 100%;
+    width: 752px;
+    height: 460px;
     padding-bottom: 460px;
     background-size: cover;
     margin-bottom: 150px;

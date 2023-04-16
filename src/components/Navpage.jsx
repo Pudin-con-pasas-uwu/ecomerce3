@@ -50,7 +50,7 @@ const Navpage = () => {
           <ul className="menu" >
             <li><Link href="/aboutpage" className="mt-4" id='StyleUl'>Sobre Nosotros</Link></li>
             <li><Link href="/Contact_us" className="mt-4" id='StyleUl'>Contactanos</Link></li>
-            <li><Link href="/LoginPage" className="mt-4" id='StyleUl'>LOGIN</Link></li>
+            {/* <li><Link href="/LoginPage" className="mt-4" id='StyleUl'>LOGIN</Link></li> */}
             <li><Link href="/Productos" className="mt-4" id='StyleUl'>Productos</Link></li>
             <li><Link href="/cart" className="mt-4" id='StyleUl'>
               Tu Carrito
