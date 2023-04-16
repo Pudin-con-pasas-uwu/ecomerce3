@@ -18,7 +18,7 @@ const Productos = (props) =>{
     <main>
       <Layout>
         <ProductsTitle />
-       <Menunav />
+        <Menunav />
         <Cardsection  users={props.users}/>
       </Layout>
     </main>
@@ -43,7 +43,7 @@ const Productos = (props) =>{
 
 Productos.getInitialProps = async (ctx) => {
   try {
-    const res = await fetch('https://ecommerce-unid.000webhostapp.com/products');
+    const res = await fetch('https://ecommerunid.sistemasdelcaribe.com/all_products');
     const data = await res.json();
     return { users: data };
   } catch (error) {

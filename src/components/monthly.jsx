@@ -13,7 +13,7 @@ const Monthly  = () => {
                 <div className={styles.suscribe}>
                     <h2 className={styles.monthly} id>BOLETÍN MENSUAL</h2>
                     <div className={styles.phrase_news}>
-                        <p className={styles.news}>¡Suscribete y unete a nuestra aldea, donde encontrarás los mejores productos a los mejore precios!</p>
+                        <p className={styles.news}>¡Suscribete y unete a nuestra aldea, donde encontrarás los mejores productos a los mejores precios!</p>
                     </div>
                     <div className="col">
                         <form className={styles.email} action="https://app.us14.list-manage.com/subscribe/post?u=bf44b77a96eca4a9f0d57cc98&amp;id=95d43bddc6&amp;f_id=00d698e0f0" method="post">

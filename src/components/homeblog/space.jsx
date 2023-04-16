@@ -13,7 +13,7 @@ const Space = () => {
           <div className="row ">
           <div className="col-lg-6">
               <p>  Comprar en nuestra tienda online es la mejor opción para ti, porque te ofrecemos una amplia selección de productos de alta calidad a precios competitivos. Además, nuestro proceso de apartados es fácil, rápido y seguro. 
-            Nos esforzamos por brindarte una experiencia de compra excepcional y un servicio al cliente amigable y profesional. ¡No esperes más y haz tu compra con nosotros hoy mismo! a</p>
+            Nos esforzamos por brindarte una experiencia de compra excepcional y un servicio al cliente amigable y profesional. ¡No esperes más y haz tu compra con nosotros hoy mismo!</p>
               <br />
               <br />
             </div>
