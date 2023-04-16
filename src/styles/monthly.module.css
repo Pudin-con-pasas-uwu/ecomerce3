@@ -32,7 +32,7 @@
     margin-bottom: 2px;
   }
   
-  .enteremail{
+  .eemail{
     width: 40%;
     margin-right: 10px;
     padding: 9px 17px;
@@ -72,7 +72,7 @@
       margin-bottom: 10%;
     }
 
-    .enteremail{
+    .eemail{
       width: auto;
       margin-left: 5%;
     }
@@ -112,7 +112,7 @@
       margin-left: 3%;
       margin-top: 8%;
     }
-    .enteremail{
+    .eemail{
       display: flex;
       align-content: center;
       justify-content: center;
@@ -126,11 +126,36 @@
 
 }
 
-@media ( min-width: 569px ) and ( max-width: 768px ){
+@media screen and ( min-width: 569px ) and ( max-width: 768px ){
 
   .monthly{
     margin-top: 50%;
   }
 
+  
+}
+
+@media screen and (min-width:1800px) and (max-width: 2560px)  {
+
+  h2.monthly{
+    font-size: 65px;
+  }
+
+  .phrase_news{
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .eemail{
+    font-size: large;
+    padding: 1.5% 3%;
+  }
+
+  .submit{
+    font-size: large;
+    padding: 1.9% 3%;
+  }
+
+  
   
 }
