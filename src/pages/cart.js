@@ -3,20 +3,23 @@ import { Store } from '../../utils/Store'
 import React, { useContext } from 'react'
 import Link from 'next/link'
 import styles from '../styles/butomSelectProducts.module.css';
+import { array } from 'i/lib/util';
 
 export default function Cart() {
+  
 
-  const { state, dispatch } = useContext(Store)
-  const { cart: { cartItems } } = state
+  const {state, dispatch} = useContext(Store)
+  const {cart : {cartItems}} = state
 
-  const removeCartHandler = (item) => {
-    dispatch({ type: 'CART_REMOVE_ITEM', payload: item })
+  const removeCartHandler = (item)=>{
+      dispatch({type: 'CART_REMOVE_ITEM', payload: item})
   }
 
   //funcion para actualizar el carrito
-  const updateCartHandler = (item, qty) => {
-    const quantity = Number(qty)
-    dispatch({ type: 'CARD_ADD_ITEM', payload: { ...item, quantity } })
+  const updateCartHandler = (item, qty)=>{
+      const quantity = Number(qty)
+      dispatch({type: 'CARD_ADD_ITEM', payload:{...item, quantity}})
+      console.log(dispatch)
   }
 
 
@@ -51,17 +54,23 @@ export default function Cart() {
                     </td>
                     <td className='ContentImg'>{item.product_name}</td>
                     <td>
-                      {item.stock > 0 ? "In stock" : "Unavailable"}
-                      {/* <select
-                        value={item.quantity}
-                        onChange={(e) => updateCartHandler(item, e.target.value)}
-                      >
-                        {[...Array(item.stock).keys()].map(x => (
+                    <div>
+                    <td id={styles.ContentCenter}>
+                      {/* <button className="btn btn-sm btn-outline-secondary mx-2" onClick={() => updateCartHandler(item, item.quantity+1)}>+</button> */}
+                     {item.quantity}
+                      {/* <button className="btn btn-sm btn-outline-secondary" onClick={() => updateCartHandler(item, item.quantity-1)}>-</button> */}
+                    </td>
+              </div>
+                      {/* {item.stock > 0 ? "In stock" : "Unavailable"} */}
+                    {/* <select value={item.quantity} onChange={(e) => updateCartHandler(item, e.target. value)} >
+                      {
+                        [...Array(item.Stock).keys()].map((x) => (
                           <option key={x + 1} value={x + 1}>
                             {x + 1}
                           </option>
-                        ))}
-                      </select> */}
+                        ))
+                      }
+                    </select> */}
                     </td>
 
                     <td>{item.price}$</td>
