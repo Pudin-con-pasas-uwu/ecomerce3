@@ -5,7 +5,7 @@
 /* productos_title END */
 
 /* CARD SECTION CSS STYLE START */
-.cards-container {
+/* .cards-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -76,5 +76,82 @@
     opacity: 0.6;
     font-size: 14px;
     line-height: 26px;
-  }
+  } */
   /* CARD SECTION CSS STYLE END */ 
+
+
+
+
+
+  .obo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+  }
+  .abajito{
+    margin-top: auto;
+    background-color: black;
+    width: 100%;
+    padding: 0.1rem;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+  }
+  .abajito p{
+    margin-top: 20px;
+  }
+  .card{
+    width: 372px;
+    height: 530px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    overflow: hidden;
+    margin: 30px;
+    text-align: center;
+    transition: all 0.25s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  #medium {
+    margin-top: auto;
+    color: black;
+  }
+  @media screen and (max-width: 768px) {
+    .card{
+      margin: 0%;
+      max-width: 95vw;
+      margin-bottom: 10px;
+    }
+  }
+.container .card:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px  rgba(0,0,0,0.2);
+}
+.container .card img{
+  width: 100%;
+  height: 260px;
+}
+.container .card h4{
+  font-weight: 600;
+  color: black;
+}
+.container .card p{
+  padding: 0.1rem;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#product_title{
+  margin-top: 20px;
+}
+.noline{
+  text-decoration: none;
+}
+.price-container {
+  background-color: black;
+  color: white;
+}

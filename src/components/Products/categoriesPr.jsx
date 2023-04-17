@@ -19,23 +19,22 @@ const CategoriesPr = (props) => {
   )}
 
   return (
-    <>
-     <div className='card-containerProducts'>
+    <main>
+     <div className='container obo'>
       {CatProductsFilter.map(category => (
-        <div key={category.id} className='col-md-3'>
-          <Link href={`/DetailProducts/${category.id}`} >
-            <div className="card" id="cardProduct">
-              <div className="card-bodyProducts">
-                <h2 className="claro">{category.product_name}</h2>
-                <p className="desc_corta">{category.short_desc}</p>
-                <p className="precio">${category.price} MXN</p>
+        <div key={category.id}>
+          <Link className='noline' href={`/DetailProducts/${category.id}`} >
+              <div className='card'>
+                <img src={`/imgs/${category.id}.jpg`}/>
+                 <h4 id='product_title'>{category.product_name}</h4>
+                 <p id='medium'>{category.short_desc}</p>
+                 <div className='abajito'><p>${category.price} MXN</p></div>
               </div>
-            </div>
           </Link>
         </div>
       ))}
       </div>
-    </>
+    </main>
   );
 }
 
