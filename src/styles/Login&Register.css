@@ -91,6 +91,11 @@
     padding: 15px 100px;
     margin-top: 10px;
   }
+  @media (max-width: 280px){
+    #LoginPage_ButtonRegister{
+      padding: 15px 40px;
+    }
+  }
   #LoginPage_ButtonRegister:hover{
     background: #b02222;
     color: white;
