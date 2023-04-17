@@ -13,9 +13,14 @@ const CategoriesPr = (props) => {
 
   if (CatProductsFilter.length === 0) {
     return(
-    <div className='NoProductsTitle'>
+      <main>
+            <div className='NoProductsTitle'>
      <h3>No hay productos</h3>
     </div>
+    <div className='NoProductsTitle'>
+    <Link href="/Productos"> <h3>go back</h3></Link>
+    </div>
+      </main>
   )}
 
   return (

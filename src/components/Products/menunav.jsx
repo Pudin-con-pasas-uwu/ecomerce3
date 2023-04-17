@@ -18,6 +18,7 @@ const Menunav = () => {
 
 return (
     <ul className="nav categoriesNav">
+      <Link href="/Productos" className='noline' id="blacker"><li>Todos</li></Link>
       {categories.map(category => (
         <li key={category.id}>
           <Link href={`/CategoriesP/${category.id}`} className="MenuCategory">
