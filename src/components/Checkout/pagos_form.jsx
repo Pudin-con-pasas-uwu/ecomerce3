@@ -15,8 +15,8 @@ const Pagos = () => {
                         <input type="text" className="form-control" name="name" placeholder='Nombres y apellidos'  required />
                       </div>
                       <div className="col-md-4">
-                        <label className="form-label">email</label>
-                        <input type="email" className="form-control" name="email" placeholder='Nombres y apellidos'  required />
+                        <label className="form-label">correo electronico</label>
+                        <input type="email" className="form-control" name="email" placeholder='correo'  required />
                       </div>
                       <br />
                     </div>
@@ -28,8 +28,8 @@ const Pagos = () => {
                         <input type="text" className="form-control" name="message" placeholder='Ciudad' required />
                       </div>
                       <div className="col-md-4">
-                        <label className="form-label">address</label>
-                        <input type="text" className="form-control" name="address" placeholder='address' required />
+                        <label className="form-label">direccion</label>
+                        <input type="text" className="form-control" name="direccion" placeholder='direccion' required />
                       </div>
                     </div>
                   </div>

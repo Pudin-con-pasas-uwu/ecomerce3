@@ -24,7 +24,7 @@ export default function Cart() {
   return (
     <Layout>
       <h2 className="text-center">Shopping Cart</h2>
-      <div className="container" id={styles.ContainerSize}>
+      <div className="container" id={styles.ContainerSize} >
         {cartItems.length === 0 ? (
           <div className='text-center'>
             <h3>
@@ -32,7 +32,7 @@ export default function Cart() {
             </h3>
           </div>
         ) : (
-          <div className='table-responsive-xxl'>
+          <div className='table-responsive-xxl'  >
             <table className="table table-striped table-hover">
               <thead>
                 <tr>
@@ -79,7 +79,7 @@ export default function Cart() {
               </div>
             </div>
             <div className='text-center'>
-              <Link href="/checkout" className="btn btn-dark" id={styles.ButtonCheckout} tipe="button" >Proceed to payment</Link>
+              <Link href={{ pathname: '/checkout', search: queryParams.toString() }} className="btn btn-dark" id={styles.ButtonCheckout} type="button">Proceder al pago</Link>
             </div>
             {/* <Link href={`/checkout`} type="button" class="btn btn-dark" id={styles.bottomSpace}>pay</Link> */}
             {/* <Link href={`/checkout`} type="button" class="btn btn-dark" onClick={} id={styles.bottomSpace}>pay</Link> */}

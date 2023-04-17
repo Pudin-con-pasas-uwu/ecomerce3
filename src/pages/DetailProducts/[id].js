@@ -64,10 +64,10 @@ const DetaillProducts = ({ user }) => {
                             <div class="container">
                                 <div className='row'>
                                     <div className='col-md-6'>
-                                        <a class="btn btn-dark" id={styles.bottomSpace} tipe="button" href="javascript:history.back()">Go back</a>
+                                        <a class="btn btn-dark" id={styles.bottomSpace} tipe="button" href="javascript:history.back()">Atras</a>
                                     </div>
                                     <div className='col-md-6'>
-                                        <button class="btn btn-dark" id={styles.bottomSpace} onClick={addToCartHandler}>ADD</button>
+                                        <button class="btn btn-dark" id={styles.bottomSpace} onClick={addToCartHandler}>Añadir</button>
                                     </div>
                                 </div>
                             </div>
