@@ -34,7 +34,7 @@ const Layout = (props) => {
       <Navpage />
       <div>{props.children}</div>
       <Monthly />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
