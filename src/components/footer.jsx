@@ -39,7 +39,7 @@ const Footer  = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className="col-2 seccion">
+                    <div className="col-sm-2 seccion">
                         <div className={styles.columna}>
                             <h5 className={styles.titulo} i>INICIO</h5>
                             <p><Link className={styles.item} href="/">Inicio</Link></p>
@@ -48,7 +48,7 @@ const Footer  = () => {
                             <p><Link className={styles.item} href="/Productos">Productos</Link></p>  
                         </div>
                     </div>
-                    <div className="col-2 seccion">
+                    <div className="col-sm-2 seccion">
                         <div className={styles.columna}>
                             <h5 className={styles.titulo_1}>CATEGORIAS</h5>
                             <div className={styles.lista}>
