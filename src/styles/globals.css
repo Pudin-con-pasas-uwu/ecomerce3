@@ -33,63 +33,67 @@
     margin-bottom: 20%;
   }
   .seccion{
-    align-content: center;
-    justify-content: center;
-    margin-left: 18%;
-    margin-bottom: 22%;
-  }
-}
-
-
-@media screen and (min-width:321px) and (max-width: 420px){
-
-  .seccion{
-    align-content: center;
-    justify-content: center;
-    margin-left: 19%;
-    margin-bottom: 22%;
-  }
-}
-@media screen and (min-width:421px) and (max-width: 568px){
-
-  .seccion{
-    align-content: center;
-    justify-content: center;
-    margin-left: 9%;
-    margin-bottom: 22%;
-  }
-}
-
-@media screen and (min-width: 570px) and (max-width: 768px) {
-  
-  .seccion{
-    margin-bottom: 10%;
-    margin-left: 17%;
-  }
-  .futer{
-    margin-left: 22%;
     display: flex;
     align-content: center;
     justify-content: center;
-    flex-direction: row;
-    padding: 0%;
+    flex-wrap: wrap;
+    margin-left: 9%;
+    margin-bottom: 12%;
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1019px) {
+@media screen and (max-width: 420px){
+
+  .seccion{
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 22.5%;
+    margin-bottom: 22%;
+  }
+}
+
+@media screen and (max-width: 568px){
+
+  .seccion{
+    align-content: center;
+    justify-content: center;
+    margin-left: 25%;
+    margin-bottom: 22%;
+  }
+}
+
+@media screen and (max-width: 768px) {
   
   .seccion{
-    margin-bottom: 10%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    margin-left: 33%;
   }
 
 }
-@media screen and (min-width: 1800px) and (max-width: 2560px) {
+
+@media screen and (max-width: 820px) {
   
-  .seccion{
-    line-height: 38px;
+  .futer{
+    width:35%;
   }
 
 }
+
+@media screen and (max-width:920px) {
+  
+  .futer{
+    width:35%;
+  }
+
+}
+
+
+
 
 /* pequeños cambios en la ui-design jose ramon */
 
