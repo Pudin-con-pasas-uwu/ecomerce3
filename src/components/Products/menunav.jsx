@@ -1,6 +1,6 @@
-import Link from "next/link"; 
-import React, { useState, useEffect } from 'react';
 import axios from "axios";
+import Link from "next/link";
+import { useEffect, useState } from 'react';
 
 const Menunav = () => {
   const [categories, setCategories] = useState([]);

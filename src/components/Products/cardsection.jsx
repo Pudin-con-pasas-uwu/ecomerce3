@@ -1,6 +1,5 @@
-import Link from "next/link"; 
+import Link from "next/link";
 import PropTypes from 'prop-types'; // Importamos la librería prop-types para validar las propiedades que recibimos
-import { Router } from "next/router";
 
 const Cardsection = (props) => {
   return (
