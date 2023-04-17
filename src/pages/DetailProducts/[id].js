@@ -1,12 +1,11 @@
-import Layout from '../../components/Layouts/Layout'
-import ImgProducts from '../../components/componentsDetaillProducts/imgProducts'
-import DescriptionProdicts from '../../components/componentsDetaillProducts/descriptionProducts'
+import Layout from '../../components/Layouts/Layout';
+import DescriptionProdicts from '../../components/componentsDetaillProducts/descriptionProducts';
 import styles from '../../styles/butomSelectProducts.module.css';
 
 // Importamos el hook useRouter para poder obtener el id del query string de la URL
+import fetch from 'isomorphic-fetch';
 import { useRouter } from "next/router";
-import fetch from 'isomorphic-fetch'
-import React, { useContext } from 'react'
+import { useContext } from 'react';
 import { Store } from '../../../utils/Store';
 
 const DetaillProducts = ({ user }) => {
@@ -46,7 +45,7 @@ const DetaillProducts = ({ user }) => {
             <div className='container-fluid' id={styles.FeatContainer}>
                 <div className='row'>
                     <div className='col-md-6'>
-                        <ImgProducts />
+                        <img src={`/imgs/${user.id}.jpg` } class="img-fluid" alt="imagen del producto"  id={styles.featImg}/>
                     </div>
                     <div className='col-md-6'>
                         <h1 id='StyleTextHeader' >{user.product_name}</h1>
