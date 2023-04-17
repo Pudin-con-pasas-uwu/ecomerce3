@@ -1,9 +1,8 @@
-import React from 'react';
-import fetch from 'isomorphic-fetch'
-import Cardsection from '@/components/Products/cardsection'
-import Layout from '@/components/Layouts/Layout'
-import ProductsTitle from '@/components/Products/Products_title'
-import Menunav from '@/components/Products/menunav'
+import Layout from '@/components/Layouts/Layout';
+import ProductsTitle from '@/components/Products/Products_title';
+import Cardsection from '@/components/Products/cardsection';
+import Menunav from '@/components/Products/menunav';
+import fetch from 'isomorphic-fetch';
 import { useRouter } from 'next/router';
 
 const Productos = (props) =>{

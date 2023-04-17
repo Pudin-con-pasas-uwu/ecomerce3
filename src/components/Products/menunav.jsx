@@ -1,6 +1,6 @@
-import Link from "next/link"; 
-import React, { useState, useEffect } from 'react';
 import axios from "axios";
+import Link from "next/link";
+import { useEffect, useState } from 'react';
 
 const Menunav = () => {
   const [categories, setCategories] = useState([]);
@@ -18,6 +18,7 @@ const Menunav = () => {
 
 return (
     <ul className="nav categoriesNav">
+      <Link href="/Productos" className='noline' id="blacker"><li>Todos</li></Link>
       {categories.map(category => (
         <li key={category.id}>
           <Link href={`/CategoriesP/${category.id}`} className="MenuCategory">

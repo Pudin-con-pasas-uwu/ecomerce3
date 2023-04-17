@@ -22,7 +22,7 @@
 
 
 .seccion{
-  line-height: 26px;
+  line-height: 25px;
 }
 
 @media screen and (max-width:320px) {
@@ -83,6 +83,13 @@
   }
 
 }
+@media screen and (min-width: 1800px) and (max-width: 2560px) {
+  
+  .seccion{
+    line-height: 38px;
+  }
+
+}
 
 /* pequeños cambios en la ui-design jose ramon */
 
@@ -95,10 +102,12 @@
 }
 
 #StyleUl{
+  color: #1a1b1f;
   font-weight: bolder;
 }
 #StyleUl:hover{
-  color: black;
+  color: #b02222;
+  /* color: black; */
 }
 
 #StyleTextHeader{
@@ -111,3 +120,4 @@
   rgba(0, 0, 0, var(--opacidad-negro))), url("/_next/static/media/example.e7d8a1f8.jpg")!important;
   
 }
+

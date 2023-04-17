@@ -6,15 +6,14 @@ const Space = () => {
       <div className="container space">
         <h2 className="Espacio " id="StyleTextHeader" >Esta es tu tienda</h2>
         <p className="Espacio2 ">
-        Porque comprar en otras tiendas, cuando puedes comprar en esta ;3
+        Porque comprar en otras tiendas, cuando puedes comprar en esta.
         </p>
         <hr />
         <div className="container Espacio3">
           <div className="row ">
           <div className="col-lg-6">
               <p>  Comprar en nuestra tienda online es la mejor opción para ti, porque te ofrecemos una amplia selección de productos de alta calidad a precios competitivos. Además, nuestro proceso de apartados es fácil, rápido y seguro. 
-            Nos esforzamos por brindarte una experiencia de compra excepcional y un servicio al cliente amigable y profesional. ¡No esperes más y haz tu compra con nosotros hoy mismo! a</p>
-              <br />
+            Nos esforzamos por brindarte una experiencia de compra excepcional y un servicio al cliente amigable y profesional. ¡No esperes más y haz tu compra con nosotros hoy mismo!</p>
               <br />
             </div>
             <div className="col-lg-6">

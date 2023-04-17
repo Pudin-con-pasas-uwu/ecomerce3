@@ -27,13 +27,14 @@ const Footer  = () => {
             <div className={styles.container_footer}>
                 <div className="row">
                     <div className="col-sm-6 futer">
-                        <div className={styles.imgen}>
+                        <div >
                             <Link href="/">
                                 <Image 
+                                className={styles.imgen}
                                 src={logo} 
                                 alt="logo"
                                 width={100}
-                                height={38}
+                                height={40}
                                 />
                             </Link>
                         </div>

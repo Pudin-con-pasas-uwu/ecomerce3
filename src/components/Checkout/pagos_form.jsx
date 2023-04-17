@@ -1,10 +1,15 @@
 // https://formsubmit.co/
 // agregar el monto max que va a pagar 
 // checar si se nesesita mas campos
-import React from 'react';
+
+import { useRouter } from 'next/router';
+
 
 const Pagos = () => {
-    return (
+  // obtener la consulta de URL
+  const router = useRouter();
+  const subtotal = router.query.subtotal;
+  return (
             <div>
              <div className="container formcontainer">
                 <form action="https://formsubmit.co/confirmacionecomers@gmail.com " method="POST" >
@@ -38,9 +43,9 @@ const Pagos = () => {
                   </div>
                   <input type="hidden" name="_next" value="http://localhost:3000" />
                   <input type="hidden" name="_template" value="table" />
-                  <input type="hidden" name="_autoresponse" value="Gracias por tu pedido. Tu solicitud será revisada contra disponibilidad de inventario, 
-                                                                  de ser confirmada recibirás un correo electrónico con más detalles.
-                                                                  Los detalles de tu pedido se indican a continuación." />
+                  <input type="hidden" name="_autoresponse" value={`Gracias por tu pedido. Tu solicitud será revisada contra disponibilidad de inventario, 
+                  de ser confirmada recibirás un correo electrónico con más detalles.
+                  Los detalles de tu pedido se indican a continuación.Total del pedido (impuestos aplicables incluídos): ${subtotal}`} />
                 </form>
               </div>
 

@@ -1,25 +1,35 @@
-import Layout from '@/components/Layouts/Layout'
-import { Store } from '../../utils/Store'
-import React, { useContext } from 'react'
-import Link from 'next/link'
+import Layout from '@/components/Layouts/Layout';
+import Link from 'next/link';
+import { useContext } from 'react';
+import { Store } from '../../utils/Store';
 import styles from '../styles/butomSelectProducts.module.css';
+// id={styles.ContentImg}
 
 export default function Cart() {
 
-  const { state, dispatch } = useContext(Store)
-  const { cart: { cartItems } } = state
-
-  const removeCartHandler = (item) => {
-    dispatch({ type: 'CART_REMOVE_ITEM', payload: item })
+  
+  
+  const {state, dispatch} = useContext(Store)
+  const {cart : {cartItems}} = state
+  
+  const removeCartHandler = (item)=>{
+    dispatch({type: 'CART_REMOVE_ITEM', payload: item})
   }
-
+  
   //funcion para actualizar el carrito
-  const updateCartHandler = (item, qty) => {
+  const updateCartHandler = (item, qty)=>{
     const quantity = Number(qty)
-    dispatch({ type: 'CARD_ADD_ITEM', payload: { ...item, quantity } })
+    dispatch({type: 'CARD_ADD_ITEM', payload:{...item, quantity}})
+    console.log(dispatch)
   }
+  
+  
+  // obtener el valor del subtotal
+  const subtotal = cartItems.reduce((a, c) => a + c.quantity * c.price, 0);
 
-
+  // crear la consulta de URL
+  const queryParams = new URLSearchParams();
+  queryParams.append('subtotal', subtotal);
 
   return (
     <Layout>
@@ -46,22 +56,28 @@ export default function Cart() {
               <tbody>
                 {cartItems.map((item) => (
                   <tr key={item.id}>
-                    <td id={styles.ContentImg}>
-                      {/* <img src={item.image} width={70} height={70} alt="" /> */}
+                    <td > 
+                    <img src={`/imgs/${item.id}.jpg` } width={50} height={50} alt="" />
                     </td>
                     <td className='ContentImg'>{item.product_name}</td>
                     <td>
-                      {item.stock > 0 ? "In stock" : "Unavailable"}
-                      {/* <select
-                        value={item.quantity}
-                        onChange={(e) => updateCartHandler(item, e.target.value)}
-                      >
-                        {[...Array(item.stock).keys()].map(x => (
+                    <div>
+                    <td id={styles.ContentCenter}>
+                      {/* <button className="btn btn-sm btn-outline-secondary mx-2" onClick={() => updateCartHandler(item, item.quantity+1)}>+</button> */}
+                     {item.quantity}
+                      {/* <button className="btn btn-sm btn-outline-secondary" onClick={() => updateCartHandler(item, item.quantity-1)}>-</button> */}
+                    </td>
+              </div>
+                      {/* {item.stock > 0 ? "In stock" : "Unavailable"} */}
+                    {/* <select value={item.quantity} onChange={(e) => updateCartHandler(item, e.target. value)} >
+                      {
+                        [...Array(item.Stock).keys()].map((x) => (
                           <option key={x + 1} value={x + 1}>
                             {x + 1}
                           </option>
-                        ))}
-                      </select> */}
+                        ))
+                      }
+                    </select> */}
                     </td>
 
                     <td>{item.price}$</td>
@@ -80,9 +96,8 @@ export default function Cart() {
             </div>
             <div className='text-center'>
               <Link href={{ pathname: '/checkout', search: queryParams.toString() }} className="btn btn-dark" id={styles.ButtonCheckout} type="button">Proceder al pago</Link>
+
             </div>
-            {/* <Link href={`/checkout`} type="button" class="btn btn-dark" id={styles.bottomSpace}>pay</Link> */}
-            {/* <Link href={`/checkout`} type="button" class="btn btn-dark" onClick={} id={styles.bottomSpace}>pay</Link> */}
           </div>
         )}
       </div>

@@ -8,7 +8,7 @@ const Aboutimg = () => {
             <div className="img"> </div>
           </div>
           <div className="col-md-6">
-            <div className="img"></div>
+            <div className="img2"></div>
           </div>
         </div>
           </div>
